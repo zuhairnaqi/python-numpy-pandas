@@ -33,10 +33,13 @@ print("---------------- Line Break ---------------------")
 for col in newFrame:
     newFrame[col] = newFrame[col].fillna('filled')
     
-print("new Frame", newFrame)
+print("new Frame")
+print(newFrame)
 
+#Change specific column index
+newFrame['One'][2] = 'Specific value'
+print(newFrame)
 
-
-
-
+# Replace specific value
+print(newFrame.replace('filled', 'replace'))
 
